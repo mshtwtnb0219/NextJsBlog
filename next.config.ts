@@ -13,7 +13,13 @@ const nextConfig: NextConfig = {
         hostname: 'picsum.photos',
       },
     ],
-  }
+  },
+  // デフォルトが1MB
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '5mb', // 必要に応じて値を変更 
+    },
+  },
 };
 
 export default nextConfig;

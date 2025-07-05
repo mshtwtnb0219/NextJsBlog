@@ -14,10 +14,10 @@ export default function PostDropdownMenu({postId}:{postId:string}) {
                 DropdownMenuTrigger>
                 <DropdownMenuContent>
                     <DropdownMenuItem asChild>
-                        <Link href={`/posts/${postId}`} className="cursor-pointer">詳細</Link>
+                        <Link href={`manage/posts/${postId}`} className="cursor-pointer">詳細</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                        <Link href={`/posts/edit/${postId}`} className="cursor-pointer">編集</Link>
+                        <Link href={`manage/posts/edit/${postId}`} className="cursor-pointer">編集</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem className="text-red-600 cursor-pointer">削除</
                     DropdownMenuItem>

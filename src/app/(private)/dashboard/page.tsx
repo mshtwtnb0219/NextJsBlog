@@ -34,7 +34,7 @@ export default async function DashBoardPage() {
           </tr>
         </thead>
         <tbody>
-          {posts.map((post:any) => (
+          {posts.map((post) => (
             <tr key={post.id}>
               <td className="border p-2">{post.title}</td>
               <td className="border p-2 text-center">{post.published ? "表示" : "非表示"}</td>

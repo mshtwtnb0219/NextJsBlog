@@ -11,6 +11,7 @@ export default async function DashBoardPage() {
   if (!session?.user?.email || !userId) {
     throw new Error('不正なリクエストです')
   }
+  console.log(userId)
   const posts = await getOwnPosts(userId)
   return (
     <div className="p-4">

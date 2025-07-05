@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'picsum.photos',
       },
+       { 
+        protocol: 'https', 
+        hostname: 'kdteygalskjphtqvnram.supabase.co', 
+      },
     ],
   },
   // デフォルトが1MB

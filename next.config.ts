@@ -24,6 +24,14 @@ const nextConfig: NextConfig = {
       bodySizeLimit: '5mb', // 必要に応じて値を変更 
     },
   },
+   webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = config.externals || [];
+      config.externals.push("@prisma/client");
+      config.externals.push(".prisma/client");
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
